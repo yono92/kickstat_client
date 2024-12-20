@@ -1,4 +1,6 @@
 export interface Standing {
+    id: number; 
+    apiId: number;
     position: number;
     teamName: string;
     playedGames: number;

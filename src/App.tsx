@@ -4,6 +4,7 @@ import { StandingsPage } from './pages/Standings';
 import { Routes, Route } from 'react-router-dom';
 import { MatchesPage } from './pages/MatchesPage';
 import { BrowserRouter } from 'react-router-dom';
+import { TeamDetailPage } from './components/matches/TeamDetail';
 
 const queryClient = new QueryClient({
  defaultOptions: {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<StandingsPage />} />
         <Route path="/standings/:league" element={<StandingsPage />} />
         <Route path="/matches" element={<MatchesPage />} />
+        <Route path="/team/:id" element={<TeamDetailPage />} />
      </Routes>
       </Layout>
     </QueryClientProvider>
